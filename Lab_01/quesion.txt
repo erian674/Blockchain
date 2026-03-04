@@ -1,0 +1,16 @@
+Câu 1: SHA-256 Hash có độ dài bao nhiêu ký tự? Giải thích vì sao?
+- SHA-256 có độ dài là 64 ký tự. Vì SHA-256 tạo ra chuỗi nhị phân 256 bit. Mỗi ký tự Hex biểu diễn 4 bit, nên 256 : 4 = 64 ký tự.
+Câu 2: Tại sao thay đổi chỉ 1 ký tự trong dữ liệu gốc, mã Hash lại thay đổi hoàn toàn?
+- Tại vì thuật toán được thiết kế để một thay đổi nhỏ nhất ở đầu vào cũng sẽ lan truyền và làm thay đổi khoảng 50% cấu trúc của mã Hash đầu ra, giúp chống lại việc giải mã ngược.
+Câu 3: Nêu 3 tính chất của SHA-256 mà bạn đã quan sát được từ PHẦN 1 & 2.
+- Tính chất 1 - Độ dài cố định: Luôn luôn là 64 ký tự bất kể đầu vào ngắn hay dài.
+- Tính chất 2 - Tính xác định: Cùng một nội dung đầu vào luôn ra cùng một mã Hash duy nhất.
+- Tính chất 3 - Độ nhạy: Chỉ cần thay đổi 1 ký tự đầu vào, mã Hash sẽ thay đổi hoàn toàn.
+Câu 4: Chữ ký số có tác dụng gì trong blockchain?
+- Có 3 tác dụng chính:
++ Xác thực: Biết chính xác ai là người gửi.
++ Toàn vẹn: Đảm bảo dữ liệu không bị ai sửa đổi trộm.
++ Chống chối bỏ: Người gửi không thể chối cãi rằng họ không thực hiện giao dịch đó.
+Câu 5: Tại sao Private Key không được chia sẻ? Nếu Private Key bị lộ sẽ như thế nào?
+- Tại vì Private Key là chìa khóa duy nhất chứng minh quyền sở hữu tài sản.
+- Nếu bị lộ, kẻ gian sẽ có toàn quyền chuyển hết tiền đi nơi khác. Không thể lấy lại được vì giao dịch Blockchain không thể đảo ngược.
